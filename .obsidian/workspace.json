@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "f6058a867214f21e",
+    "type": "split",
+    "children": [
+      {
+        "id": "77d1e65e62c8648d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82d734527bad9af8",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20250426181439.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250426181439"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ef4451ad8de419e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9775c380a4a2627",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16244240e57b7272",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTimeReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "6b1d5aea35aaf4a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e5ecd11f4c057044",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 242.5
+  },
+  "right": {
+    "id": "f6a35dd19e90dc15",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1d409917693d391",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9915f1065424508c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TASK.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "TASK 的反向链接列表"
+            }
+          },
+          {
+            "id": "b30633028cb4ccb9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TASK.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "TASK 的出链列表"
+            }
+          },
+          {
+            "id": "1b271d1b8734376c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "5e7064ae1d479604",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TASK.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "TASK 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false
+    }
+  },
+  "active": "82d734527bad9af8",
+  "lastOpenFiles": [
+    "TASK.md",
+    "().md",
+    "pwn.md",
+    "res/3b78d43b00d1a6661fa2cb51893f9d94.png",
+    "Pasted image 20250426181439.png",
+    "AndroidSecNotes/Android安全概述/Android 本地用户空间层安全.md",
+    "AndroidSecNotes/Android安全概述/Android 安全的其他话题.md",
+    "AndroidSecNotes/Android安全概述/Android 安全概述.md",
+    "AndroidSecNotes/Android安全概述/Android Linux 内核层安全.md",
+    "AndroidSecNotes/Android 调试工具/Android 应用程序通用脱壳方法研究.md",
+    "AndroidSecNotes/Android 调试工具/Android Native Hook 工具实践.md",
+    "AndroidSecNotes/Android 调试工具/Smali Instrumentation.md",
+    "AndroidSecNotes/Android 调试工具/Android Native Hook 技术线路概述.md",
+    "AndroidSecNotes/Android 调试工具/Android Java 层的anti-Hook 技巧.md",
+    "AndroidSecNotes/Android 调试工具/Android Inline Hook 的指令修复详解.md",
+    "AndroidSecNotes/Android 调试工具/Android Hook（下）.md",
+    "AndroidSecNotes/Android 调试工具/Android Hook 框架（XPosed篇）.md",
+    "AndroidSecNotes/Android 调试工具/Android Hook 技术防范漫谈.md",
+    "AndroidSecNotes/Android 调试工具/Android Hook（上）.md",
+    "AndroidSecNotes/Android 调试工具/Android Hook 框架（Cydia篇）.md",
+    "AndroidSecNotes/Android 调试工具/Android ART 运行时（下）.md",
+    "AndroidSecNotes/Android 调试工具/Android ART 运行时（上）.md",
+    "AndroidSecNotes/Android 调试工具/常见app加固厂商脱壳方法.md",
+    "AndroidSecNotes/Android 调试工具/初识JEBAPI.md",
+    "AndroidSecNotes/Android 调试工具/Ida Pro.md",
+    "面试/二进制.md",
+    "面试/安全工程师.md",
+    "Android/SO文件调试 APK文件调试.md",
+    "报错",
+    "AndroidSecNotes/pictures/weixinzhifu.jpg",
+    "AndroidSecNotes/pictures/zhifubao.jpg",
+    "AndroidSecNotes/pictures/stringproper.png",
+    "AndroidSecNotes/pictures/shellaccess.png",
+    "AndroidSecNotes/pictures/run_as.png",
+    "AndroidSecNotes/pictures/shared_prefs.png",
+    "AndroidSecNotes/pictures/project5.jpg",
+    "AndroidSecNotes/pictures/project4.jpg",
+    "AndroidSecNotes/pictures",
+    "AndroidSecNotes/LICENSE",
+    "AndroidSecNotes/Java语言基础",
+    "AndroidSecNotes/Android逆向基础",
+    "AndroidSecNotes/Android应用安全",
+    "AndroidSecNotes/Android安全概述",
+    "AndroidSecNotes/Android 调试工具",
+    "AndroidSecNotes",
+    "数据库",
+    "未命名.canvas",
+    "未命名 1.canvas"
+  ]
+}
