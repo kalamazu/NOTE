@@ -11,12 +11,14 @@
             "id": "82d734527bad9af8",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20250426181439.png"
+                "file": "考试/密码学.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250426181439"
+              "icon": "lucide-file",
+              "title": "密码学"
             }
           }
         ]
@@ -169,11 +171,28 @@
   },
   "active": "82d734527bad9af8",
   "lastOpenFiles": [
+    "Pasted image 20250705105519.png",
+    "Pasted image 20250705105415.png",
+    "Pasted image 20250705105335.png",
+    "Pasted image 20250705003829.png",
+    "Pasted image 20250704223830.png",
+    "Pasted image 20250703165657.png",
+    "Pasted image 20250702151751.png",
+    "Pasted image 20250702151155.png",
+    "考试/操作系统.md",
+    "考试/数据结构.md",
+    "考试/密码学.md",
+    "Pasted image 20250702110142.png",
+    "Pasted image 20250630172439.png",
+    "Pasted image 20250630154844.png",
+    "数据库/数据库.md",
+    "考试",
+    "Android/SO文件调试 APK文件调试.md",
+    "Android/LLVM混淆.md",
+    "Android/人人视频.md",
     "TASK.md",
     "().md",
     "pwn.md",
-    "res/3b78d43b00d1a6661fa2cb51893f9d94.png",
-    "Pasted image 20250426181439.png",
     "AndroidSecNotes/Android安全概述/Android 本地用户空间层安全.md",
     "AndroidSecNotes/Android安全概述/Android 安全的其他话题.md",
     "AndroidSecNotes/Android安全概述/Android 安全概述.md",
@@ -189,23 +208,7 @@
     "AndroidSecNotes/Android 调试工具/Android Hook 技术防范漫谈.md",
     "AndroidSecNotes/Android 调试工具/Android Hook（上）.md",
     "AndroidSecNotes/Android 调试工具/Android Hook 框架（Cydia篇）.md",
-    "AndroidSecNotes/Android 调试工具/Android ART 运行时（下）.md",
-    "AndroidSecNotes/Android 调试工具/Android ART 运行时（上）.md",
-    "AndroidSecNotes/Android 调试工具/常见app加固厂商脱壳方法.md",
-    "AndroidSecNotes/Android 调试工具/初识JEBAPI.md",
-    "AndroidSecNotes/Android 调试工具/Ida Pro.md",
-    "面试/二进制.md",
-    "面试/安全工程师.md",
-    "Android/SO文件调试 APK文件调试.md",
     "报错",
-    "AndroidSecNotes/pictures/weixinzhifu.jpg",
-    "AndroidSecNotes/pictures/zhifubao.jpg",
-    "AndroidSecNotes/pictures/stringproper.png",
-    "AndroidSecNotes/pictures/shellaccess.png",
-    "AndroidSecNotes/pictures/run_as.png",
-    "AndroidSecNotes/pictures/shared_prefs.png",
-    "AndroidSecNotes/pictures/project5.jpg",
-    "AndroidSecNotes/pictures/project4.jpg",
     "AndroidSecNotes/pictures",
     "AndroidSecNotes/LICENSE",
     "AndroidSecNotes/Java语言基础",
@@ -214,7 +217,6 @@
     "AndroidSecNotes/Android安全概述",
     "AndroidSecNotes/Android 调试工具",
     "AndroidSecNotes",
-    "数据库",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
