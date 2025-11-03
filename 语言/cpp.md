@@ -25,3 +25,7 @@ Add->getOpcode()//等价于（*Add).getOpcode(),指针成员访问
 | `::` | 访问作用域    | `llvm::Instruction` |
 | `.`  | 访问对象成员   | `inst.getOpcode()`  |
 | `->` | 通过指针访问成员 | `BB->getParent()`   |
+
+
+auto &CTX=M.getContext()
+获取Module的上下文，并命名为CTX，由于不知道上下文的类型，将自动推导

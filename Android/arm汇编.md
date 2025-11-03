@@ -16,8 +16,11 @@
 - 当将其作为 `62bit` 零寄存器( `zero register` )的时候，使用 `ZR` 来引用它。
 
 x0保存返回值，以及传参
+
 x1-x7传参
+
 x8也可以保存返回值
+
 x9-x28通用
 x29 fp 保存栈底地址
 x30 lr 保存返回地址
@@ -39,12 +42,13 @@ st开头从寄存器存到内存去
 ls开头从内存存到寄存器来
 
 B Label
-BX Rm
+BX 
 
-BEQ 
+BEQ   CPSR第三十位
 BNE
 
 BL Label函数调用，返回地址保存到LR R14
 
 MRS Rd，CPSR
 MSR CPSR ，Rn
+

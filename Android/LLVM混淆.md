@@ -7,14 +7,19 @@ Backend：生成机器码
 
 [OLLVM](https://www.cnblogs.com/huhuf6/p/14010717.html)
 
-
 [配置成功方案AndroidStudio](https://pshocker.github.io/2022/05/04/%E7%94%A8ollvm%E6%B7%B7%E6%B7%86native%E4%BB%A3%E7%A0%81/)
 
+[Pass教程](https://github.com/banach-space/llvm-tutor?tab=readme-ov-file)
 
 [llvm pass编写   适用于Linux](https://www.less-bug.com/posts/llvm-implement-function-pass-from-scratch/)
 编写MyPass.cpp,MyPsss.h
 
 编写Makefile或者CMakelists.txt
+
+cmake -B build
+cmake --build build
+or
+make
 
 生成Libmypass.so
 在opt环节导入并使用
@@ -72,6 +77,61 @@ PreservedAnalyses MyPass::run(Function& F, FunctionAnalysisManager& AM) {
 ```
 
 
+
+加载pass流程：
+- 插件加载，opt加载libpass.so的llvmGetPassPluginInfo
+- 导出的llvmGetPassPluginInfo应当返回一个结构体，告诉opt注册信息
+- 结构体的lambda回调注册pass到PassBuilder
+- 当PassManager执行函数时，run方法被调用
+
+pass编写流程：
+- 创建Pass类，明确继承自什么类型pass
+- 定义分析结构类型（如果是分析型）
+- 实现Pass功能
+- 插件注册
+
+
+
+
+在 LLVM 中，不同类型的 Pass 需要继承不同的模板基类。下面这个表格清晰地展示了各种 Pass 类型及其对应的继承模板和核心方法：
+
+|Pass 类型|继承模板|作用范围|核心方法|适用场景|
+|---|---|---|---|---|
+|​**Module Pass**​|`PassInfoMixin<YourPassName>`|整个模块（所有函数和全局变量）|`run(Module&, ModuleAnalysisManager&)`|跨函数优化、全局死代码消除、过程间分析|
+|​**Function Pass**​|`PassInfoMixin<YourPassName>`|单个函数|`run(Function&, FunctionAnalysisManager&)`|局部优化、指令合并、函数内分析|
+|​**Loop Pass**​|`PassInfoMixin<YourPassName>`|函数内的单个循环|`run(Loop&, LoopAnalysisManager&)`|循环展开、循环不变代码外提|
+|​**CallGraphSCC Pass**​|`PassInfoMixin<YourPassName>`|调用图的强连通分量（SCC）|`run(CallGraphSCC&, CallGraphSCCAnalysisManager&)`|函数内联、过程间优化|
+|​**Analysis Pass**​|`AnalysisInfoMixin<YourAnalysisName>`|任意（由具体分析决定）|`run(IRUnit&, AnalysisManager&)`|
+
+
+
+
+Pass混淆：
+MBA混淆
+FLA 控制流平坦化
+BCF 虚假控制流插入
+DBB 基本块复制
+常量加密解密
+
+
+Pass流程：
+Module：Func：Block：指令类型：Instruction
+指令类型：BinaryOperator，LoadInst，CallInst，BranchInst，CmpInst
+
+二进制转IR：
+MC-Sema
+RetDec
+
+CFG：操作BasicBlock和它们之间的终结指令，归结为新增/删除/克隆/拆分/合并 或者修改block的terminator
+
+CFG混淆：
+1.控制流平坦化：提取基本块，新建dispatcher块，用switch控制逻辑跳转，每个块最后返回dispatcher
+2.伪控制流插入：插入不会执行的假分支
+3.把直接的跳转：换成复杂的计算跳转，或者包装成异常处理
+
+
+
+
 ### Java混淆
 [编写规则](https://www.guardsquare.com/manual/configuration/usage)
 
@@ -89,10 +149,3 @@ buildTypes {
     }  
 }
 ```
-
-
-
-
-
-
-

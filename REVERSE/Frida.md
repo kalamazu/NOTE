@@ -1,4 +1,39 @@
+
+
+
 默认监听端口 27042
+
+修改exe文件,传入函数地址，修改传入函数参数
+```python
+from __future__ import print_function
+
+import frida
+
+import sys
+
+seesion=frida.attach("hello.exe")
+
+script=seesion.create_script("""
+
+   Interceptor.attach(ptr("%s"),{
+
+   onEnter:function(args){
+
+   args[0]=ptr("1234")}});
+
+"""%int(sys.argv[1],16))
+
+def on_message(message,data):
+
+    print(message)
+
+script.on('message',on_message)
+
+script.load()
+
+sys.stdin.read()
+```
+
 
 python hook代码
 ```python
