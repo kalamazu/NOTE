@@ -1,0 +1,44 @@
+warning: in the working copy of '.obsidian/workspace.json', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/.obsidian/workspace.json b/.obsidian/workspace.json[m
+[1mindex 03672d5..e9f428e 100644[m
+[1m--- a/.obsidian/workspace.json[m
+[1m+++ b/.obsidian/workspace.json[m
+[36m@@ -27,12 +27,12 @@[m
+             "state": {[m
+               "type": "markdown",[m
+               "state": {[m
+[31m-                "file": "面试/idea.md",[m
+[32m+[m[32m                "file": "报错/git.md",[m
+                 "mode": "source",[m
+                 "source": false[m
+               },[m
+               "icon": "lucide-file",[m
+[31m-              "title": "idea"[m
+[32m+[m[32m              "title": "git"[m
+             }[m
+           }[m
+         ],[m
+[36m@@ -188,9 +188,12 @@[m
+   },[m
+   "active": "de4e9b7786936c32",[m
+   "lastOpenFiles": [[m
+[32m+[m[32m    "护网/st.md",[m
+[32m+[m[32m    "报错/git.md",[m
+[32m+[m[32m    "病毒分析/杂项.md",[m
+[32m+[m[32m    "面试/idea.md",[m
+     "面试/安卓.md",[m
+     "面试/爬虫.md",[m
+[31m-    "面试/idea.md",[m
+     "Android/美团.md",[m
+     "面试/TASK.md",[m
+     "AndroidSecNotes/Android逆向基础/ARM 汇编指令简介.md",[m
+[36m@@ -211,9 +214,6 @@[m
+     "语言/cpp.md",[m
+     "语言/python.md",[m
+     "语言/java.md",[m
+[31m-    "语言/c.md",[m
+[31m-    "抓包/CA.md",[m
+[31m-    "抓包/Reqable.md",[m
+     "res/babyvm1.png",[m
+     "res/babyvm2.png",[m
+     "res/RSA.png",[m

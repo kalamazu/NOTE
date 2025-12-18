@@ -17,3 +17,22 @@ pythonhome报错：
 ```powershell
 $env:PYTHONHOME = ""
 ```
+
+
+#代理
+代理不使用ICMP协议，无法进行ping
+*Invoke-WebRequst -Uri “[https://www.google.com](https://www.google.com)” -UseBasicParsing -Method Head
+
+使用该指令进行测试连接
+
+
+> win + r eventvwr   
+
+进入Windows日志
+
+
+sudo dhclient解决虚拟机网络问题
+
+Get-History | Select-Object -Last 50
+
+cat (Get-PSReadlineOption).HistorySavePath -Last 20

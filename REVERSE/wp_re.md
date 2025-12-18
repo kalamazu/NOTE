@@ -194,7 +194,8 @@ TLS中同时利用异常处理机制来反调试和进行数据干预
 RC4加密
 ### **NCTF_gogo
 
-### **XYCTF_dragon[XYCTF题解](https://tkazer.github.io/2025/04/07/XYCTF2025/)
+### **XYCTF_dragon
+[XYCTF题解](https://tkazer.github.io/2025/04/07/XYCTF2025/)
 知识点：CRC64，.bc文件bitcode，ll是文本形式的中间代码
 给了一个bc文件，bc文件是LLVM字节码文件，可以通过LLVM工具链转化为ll文件，提高可读性
 ```bash
